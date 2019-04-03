@@ -17,7 +17,7 @@
 
 <html>
 <head>
-		<title>Curso avanzado - QC Learning</title>
+		<title>Cursos - QC Learning</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -77,7 +77,7 @@ window.addEventListener("scroll", yScroll);
 <div class="inner">
 			<div class="content">
 				<div id="diagnotico"></div>
-				<h3>Antes de empezar</h3>Contenidos:<br>>Curso básico: Introducción y puertas lógicas cuánticas<br>>Curso avanzado: Tele-transportación cuántica de datos
+				<h3>Contenidos:</h3><li>Introducción a los cursos</li><li>Curso básico: Introducción y puertas lógicas cuánticas</li><li>Curso avanzado: Tele-transportación cuántica de datos</li>
 			</div>
 </section>
 </div>
@@ -88,14 +88,29 @@ window.addEventListener("scroll", yScroll);
 					<div class="content">
 						<div id="diagnotico"></div>
 							<h3>Introducción</h3>
-							P1.<br/><br/>
+							En esta sección, se presentan cursos con diferentes niveles de dificultad, que permitan comprender al estudiante algunos de los fundamentos más generales de la informática cuántica. Para esto, se recomienda realizar previamente una <a href="/academia3/genericopia.php">prueba de diagnóstico</a>, la cual servirá para definir el curso más indicado para el estudiante.<br/><br/>
+							
+							Cuando el estudiante finalice los cursos, deberá estar capacitado para entender de qué forma operan los algoritmos cuánticos, haciendo uso de un circuito de estilo pentagrama musical, asimismo, podrá resolver problemas del mismo tipo (cuántico), utilizando vectores para la definición de las unidades de información requeridas (Cúbits) y operadores cuánticos.<br/><br/>
 
-							P2.<br/><br/><br/>
+							<h3>Conocimientos previos</h3>
+							Los cursos deben ser útiles a quienes sólo conozcan los principios del álgebra, así como a estudiantes de ingeniería que hayan cursado los ramos de la línea de las matemáticas.
+							Se espera que el estudiante posea un conocimiento básico en las siguientes materias:<br><br>
+							<li>Vectores (Introducción)</li>
+							<li>Independencia lineal</li>
+							<li>Bases y espacios vectoriales</li>
+							<li>Producto interno</li>
+							<li>Introducción a la mecánica cuántica</li>							
+							<br><h3>Cursos</h3>
+							<a href="#">Curso básico: Introducción y puertas lógicas cuánticas</a></p>
+							<a href="QuantumTeleportADV2.php">Curso avanzado: Tele-transportación cuántica de datos</a></p><br>
+							<h3>Guía externa (opcional)</h3>
+							Como complemento, se enlaza una guía de introducción a la informática cuántica realizada por el investigador y desarrollador de software en Microsoft, Dayton Ellwanger.
+							El formato de esta guía es a través de videos ordenados y subidos a un canal de YouTube perteneciente al creador.
 
-							P3.<br/><br/>
-
-							P4.<br/><br/><br/><a href="#">Curso básico: Introducción y puertas lógicas cuánticas</a></p>
-							<a href="QuantumTeleportADV2.php">Curso avanzado: Tele-transportación cuántica de datos</a></p>
+							<a type="button" value="Comenzar" onClick="this.style.visibility= 'hidden'; document.getElementById('oculto').style.visibility='visible';document.getElementById('oculto2').style.visibility='visible'">Mostrar Lista de reproducción.</a><br> 
+							<div id="oculto" style="visibility:hidden"> 
+								<iframe width="400" height="210" src="https://www.youtube.com/embed/videoseries?list=PLIxlJjN2V90w3KBWpELOE7jNQMICxoRwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+							</div>
 					</div>
 				</div>
 			</section>

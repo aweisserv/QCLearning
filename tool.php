@@ -29,7 +29,7 @@
 		
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">QC Learning</a>
+				<a class="logo" href="index.html">QC Learning</a>
 		<!-- Referencias del login-->
 				<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
 				<li><a href="desconectar.php"> Cerrar Cesión </a></li>			 
@@ -58,7 +58,8 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2>Prototipo de evaluación de diagnóstico<br /> </h2>En esta sección, podrá realizar un test de diagnóstico que evaluará sus conocimientos en Informática cuántica. Al finalizar el test, Obtendrá un puntaje de acuerdo a la cantidad de preguntas respondidas correctamente. El puntaje obtenido lo ayudará a escoger una sección de aprendizaje adecuada según sus conocimientos en el área.
+							<h2>Fundamentos de programación cuántica<br /> </h2><h3> En esta sección podrá hacer uso de una herramienta que le permita poner a prueba los conocimientos adquiridos.</h3>
+							Se presentan alternativas con distintas partes de código que deberá analizar. Solo puede seleccionar una alternativa por respuesta, y una sola será la correcta.
 					<!-- Ancla -->	
 							<div id="diagnotico"></div>
 							<hr/> 
@@ -80,8 +81,8 @@
 							var questions = [
 							    [ "¿Qué es un 'Cúbit'?", "¿Cúbit?", "La unidad de información más pequeña en la computación cuántica", "Un estado entrelazado de información", "B" ],
 								[ "¿Cuál es el principio cuántico que implica dos estados simultáneos?", "Hadamard Gate", "Entrelazamiento cuántico", "Superposición cuántica", "C" ],
-								[ "¿Cual es el principio cuántico que aplica la puerta CNOT?", "Entrelazamiento cuántico", "Superposición cuántica", "Decoherencia de estados", "A" ],
-								[ "¿Cual de las siguientes puertas cuánticas aplica el principio de Superposición?", "Z", "X", "Hadamard", "C" ]
+								[ "Pregunta 3?", "<code>msg</code>", "incorrecta", "incorrecta", "A" ],
+								[ "Pregunta 4?", "incorrecta", "incorrecta", "<code>operation Teleport(msg : Qubit, <strong>|ψ⟩</strong> : Qubit) : Unit {body (...) {</code>", "C" ]
 							];
 
 							function _(x){
@@ -91,7 +92,7 @@
 							function renderQuestion(){
 								test = _("test");
 								if(pos >= questions.length && correct <= questions.length/3){
-									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2> 											 <h3>Te sugerimos empezar por la <a href='section/QuantumTeleportADV.php'>sección de aprendizaje para principiantes</a> </h3> <hr /><h3>Curso básico<br></h3>";
+									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2> 											 <h3>Te sugerimos empezar por la <a href='index.html'>sección de aprendizaje para principiantes</a> </h3> <hr /><h3>Sección Principiantes<br><p>Origen y conceptos clave.</h3></p></h3>";
 
 									
 									_("test_status").innerHTML = "Prueba completada";
@@ -103,7 +104,7 @@
 
 
 								}else if (pos >= questions.length && correct > questions.length/3){
-									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2><hr/><h3><a href='section/QuantumTeleportADV2.php'>Curso avanzado</a></h3>";
+									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2><hr/><h3><a href='#'>Seguir aprendiendo</a></h3>";
 									
 
 									_("test_status").innerHTML = "Prueba completada";

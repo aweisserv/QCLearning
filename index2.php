@@ -65,7 +65,7 @@
 					Educational platform of introduction to quantum computing  </p> <br />
 					Proyecto de título por Allan Weisser V.<br /><a href="https://campus.ing.unab.cl/">UNIVERSIDAD ANDRES BELLO</a></p>
 				</div>
-				<video autoplay loop muted playsinline src="images/particles.mp4"></video>
+				<!--<video autoplay loop muted playsinline src="images/particles.mp4"></video>-->
 			</section>
 
 		<!-- Highlights -->
@@ -152,7 +152,7 @@
 						<section>
 							<div class="content">
 								<blockquote>
-									<p>Miguel Solis.<br />Profesor guía</p>
+									<p>Juan Calderón.<br />Profesor guía</p>
 								</blockquote>
 								<div class="author">
 									<div class="image">
@@ -165,7 +165,7 @@
 						<section>
 							<div class="content">
 								<blockquote>
-									<p>Juan Calderón.<br />Profesor evaluador hitos</p>
+									<p>Romina Torres<br />Directora de carrera</p>
 								</blockquote>
 								<div class="author">
 									<div class="image">
@@ -178,7 +178,7 @@
 						<section>
 							<div class="content">
 								<blockquote>
-									<p>Ambiente académico. <br /> Sobre la UNAB</p>
+									<p>Ambiente académico. <br /> </p>
 								</blockquote>
 								<div class="author">
 									<div class="image">

@@ -85,9 +85,9 @@ window.addEventListener("scroll", yScroll);
 				<ol>
 					<li>Paso 0 - Inicio y preparación</li> 
 					<li>Paso 1 - Entrelazamiento</li>
-					<li>Paso 1.1 - Aplicando compuerta cuántica CNOT</li>
-					<li>Paso 1.2 - Aplicando compuerta cuántica Hadamard</li>
-					<li>Paso 2 - Limpieza </li>
+					<li>Paso 1.1 - Aplicando compuerta CNOT</li>
+					<li>Paso 1.2 - Aplicando compuerta Hadamard</li>
+					<li>Paso 2 - Medición </li>
 				</ol>
 
 </section>
@@ -103,7 +103,7 @@ window.addEventListener("scroll", yScroll);
 
 					<h3>Paso - <b>0: Inicio y preparación del algoritmo</b> </h3>
 
-					Para realizar el siguiente algoritmo cuántico, es necesario que el emisor del mensaje y el receptor(yo) del mismo, tengamos preparado previamente un <strong>estado de Bell</strong>; donde él posee un cúbit <strong>|G⟩</strong> que está entrelazado con mi cúbit, <strong>|F⟩</strong>. Si deseo alejarme del emisor, no importa a qué distancia nos separemos, ya sea de un país a otro, de todo el mundo o el universo, estos cúbits seguirán entrelazados.<br/><br/><hr>
+					Para realizar el siguiente algoritmo cuántico, es necesario que el emisor del mensaje y el receptor(yo) del mismo, tengamos preparado previamente un <strong>estado de Bell</strong>; donde él posee un cúbit <strong>|G⟩</strong> que está entrelazado con mi cúbit, <strong>|F⟩</strong>. Si deseo alejarme del emisor, no importa a qué distancia nos separemos, ya sea de un país a otro, de todo el mundo o el universo, estos cúbits seguirán entrelazados.<br/>Recordemos la propiedad del entrelazado: Los resultados de medición están correlacionados. Si el emisor mide su cúbit, afectará a mi cúbit (de nuevo, a pesar de la distancia). Vamos a explotar esta propiedad en los siguientes pasos.<br/><hr>
 
 					<h3>Paso - <b>1: Entrelazar Cúbit del emisor con |ψ⟩</b><br/>
 					<img src="images/imagenes/001.png" width="600" height="300"></h3><br/>
@@ -135,7 +135,7 @@ window.addEventListener("scroll", yScroll);
 					Una vez que la puerta CNOT ha operado, obtenemos el resultadobr/><br/><br/>
 					<img src="images/imagenes/010.png" width="400" height="40"><br/><br/><hr>
 
-					<h3>Paso - <b>1.2: Aplicar compuerta cuántica Hadamard</b></h3>
+					<h3>Paso - <b>1.2: Aplicar compuerta Hadamard</b></h3>
 
 					El siguiente paso para entrelazar |G⟩ con el estado |ψ⟩ es aplicar la puerta de Hadamard al primer cúbit. Podemos ver cómo se ve en el circuito cuántico a continuación.</b><br/>
 					<img src="images/imagenes/011.png" width="600" height="300"><br/>
@@ -150,7 +150,16 @@ window.addEventListener("scroll", yScroll);
 					<img src="images/imagenes/015.png" width="100" height="35">, notarán que tenemos dos factores de √2, los sacaremos de sus fracciones y los multiplicaremos como<br/><br/>
 					<img src="images/imagenes/016.png" width="600" height="75"><br/><br/><br/>
 					Aplicando la misma lógica a los términos restantes, obtenemos <img src="images/imagenes/017.png" width="100" height="30">,<img src="images/imagenes/018.png" width="100" height="28"> y <img src="images/imagenes/019.png" width="100" height="26">. Notarás que el factor ½ es común para cada uno de ellos, por lo que podemos tomarlo fuera de los corchetes dando el resultado colectivo:<br/><br/><img src="images/imagenes/020.png" width="700" height="62"><br/>
-					<br/><h3><br/>Siguiente</p></h3>
+					Ahora vamos a expandir los corchetes con el fin de facilitar el próximo paso. Primeramente, ampliamos <img src="images/imagenes/021.png" width="115" height="25">, como ejemplo.
+					<br><br><img src="images/imagenes/022.png" width="550" height="38"><br/>Dejaremos los restantes "como ejercicio", sin embargo, dejamos los resultados a continuación:
+					<br><br><img src="images/imagenes/023.png" width="600" height="160"><br/>
+					Reuniéndolos todos juntos, obtenemos el siguiente resultado:<br><img src="images/imagenes/024.png" width=700" height="62"><br/><br/><hr>
+
+					<h3>Paso - <b>2: Efectuar medición</b></h3>
+
+					Ahora que hemos entrelazado el cúbit <strong>|G⟩</strong> del emisor con el cúbit<strong>|ψ⟩</strong>  del receptor, vamos a medir a ambos. Pero antes de hacerlo, debemos obtener nuestros resultados en un formato que sea más fácil de interpretar.
+
+					<br/><h3><br/>Siguiente</p></h3><a href="QuantumTeleportADV3.php">Curso avanzado: Tele-transportación cuántica de datos</a></p>
 				</div>
 			</div>
 		</section>
