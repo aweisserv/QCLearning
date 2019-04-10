@@ -43,7 +43,7 @@
 						<header>
 							<h2 id="quantum-teleportation-code">Quantum Teleportation: Code</h2>
 							<p>We have our circuit for quantum teleportation:</p>
-							<p><img src="../media/teleportation.svg?view=qsharp-preview" alt="`Teleport(msg : Qubit, there : Qubit) : Unit`" data-linktype="relative-path"></p>
+							
 							<p>We can now translate each of the steps in this quantum circuit into Q#.</p>
 							<h3 id="step-0-definition">Step 0: Definition</h3>
 							<p>When we perform teleportation, we must know the <strong>message</strong> we wish to send, and where we wish to send it (<strong>there</strong>). For this reason, we begin by defining a new Teleport operation that is given two qubits as arguments, <code>msg</code> and <code>there</code>:</p>

@@ -19,7 +19,7 @@
 <html>
 	<head>
 		<!--<title>Educa IC</title>-->
-		<title>Inicio - QC Learning</title>
+		<title>Inicio | QC Learning</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
