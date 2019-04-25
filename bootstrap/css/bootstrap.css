@@ -283,6 +283,43 @@ a:hover {
   min-height: 1px;
   margin-left: 20px;
 }
+.container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+    
+  }
+.container .box{
+  position: relative;
+  height: 400px;
+  background: #060c21;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  border: 1px solid: #000;
+
+}
+.content{
+  position: relative;
+  padding: 20px;
+}
+.content h6{
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 8em;
+  color: rgba(255, 255, 255, .05);
+  transition: 0.5s;
+
+}
+.box: hover .content h6{
+  top: -140px;
+}
 
 .container,
 .navbar-static-top .container,
@@ -6037,3 +6074,4 @@ a.badge:hover {
 .affix {
   position: fixed;
 }
+

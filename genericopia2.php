@@ -1,16 +1,15 @@
 <!DOCTYPE HTML>
 <!--
---- Allan Weisser V.
-	PT1
+--- Proyecto de título 201901
+	Allan Weisser V.
+	Profesor guía: Sarita González C.
 -->
 
-<!-- Revisión de Login para acceso -->
+<!-- Revisión de Login & puntaje mínimo para acceso -->
 	<?php
 	session_start();
-	if (@!$_SESSION['user']) {
-		header("Location:index.php");
-	}elseif ($_SESSION['rol']==1) {
-		header("Location:admin.php");
+	if ((@!$_SESSION['user'])||($_SESSION['puntaje']<600)) {
+		header("Location:index2.php");
 	}
 	?>
 <!-- Fin revisión -->
@@ -50,7 +49,7 @@
 
 		<!-- Heading -->
 			<div id="heading" >
-				<h1>Prueba de diagnóstico</h1>
+				<h1>Segunda prueba de medición</h1>
 			</div>
 
 		<!-- Main -->
@@ -58,7 +57,7 @@
 				<div class="inner">
 					<div class="content">
 						<header>
-							<h2>Prototipo de evaluación de diagnóstico<br /> </h2>En esta sección, podrá realizar un test de diagnóstico que evaluará sus conocimientos en Informática cuántica. Al finalizar el test, Obtendrá un puntaje de acuerdo a la cantidad de preguntas respondidas correctamente. El puntaje obtenido lo ayudará a escoger una sección de aprendizaje adecuada según sus conocimientos en el área.
+							<h2>Prototipo de evaluación de conocimientos adquiridos en curso avanzado<br /> </h2>En esta sección, podrá realizar un test que evaluará los conocimientos aprendidos en el curso avanzado. Al finalizar el test, Obtendrá un puntaje de acuerdo a la cantidad de preguntas respondidas correctamente. El puntaje obtenido podría permitirle acceder a la siguiente sección.
 					<!-- Ancla -->	
 							<div id="diagnotico"></div>
 							<hr/> 
@@ -78,7 +77,7 @@
 
 							var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0, puntaje = 0;
 							var questions = [
-							    [ "¿Qué es un 'Cúbit'?", "¿Cúbit?", "La unidad de información más pequeña en la computación cuántica", "Un estado entrelazado de información", "B" ],
+							    [ "Teniendo nuestro circuito cuántico realizado anteriormente:<br> <img src='section/images/imagenes/12.png' width='400' height='182'><br>¿Cuál es el resultado que debiese esperar después de la medición?" , "00", "11", "Dependerá del resultado de la medición", "C" ],
 								[ "¿Cuál es el principio cuántico que implica dos estados simultáneos?", "Hadamard Gate", "Entrelazamiento cuántico", "Superposición cuántica", "C" ],
 								[ "¿Cual es el principio cuántico que aplica la puerta CNOT?", "Entrelazamiento cuántico", "Superposición cuántica", "Decoherencia de estados", "A" ],
 								[ "¿Cual de las siguientes puertas cuánticas aplica el principio de Superposición?", "Z", "X", "Hadamard", "C" ]
@@ -121,8 +120,8 @@
 								test.innerHTML = "<h3>"+question+"</h3>";
 
 								
-								test.innerHTML += "<input type='radio' id='radio-alpha' name='choices' value='A'><label for='radio-alpha'>  "+chA+" </label><br><br>";
-								test.innerHTML += "<input type='radio' id='radio-beta' name='choices' value='B'><label for='radio-beta'>    "+chB+"</label><br><br>";
+								test.innerHTML += "<input type='radio' id='radio-alpha' name='choices' value='A'><label for='radio-alpha'>  "+chA+" </label><br>";
+								test.innerHTML += "<input type='radio' id='radio-beta' name='choices' value='B'><label for='radio-beta'>    "+chB+"</label><br>";
 								test.innerHTML += "<input type='radio' id='radio-gamma' name='choices' value='C'><label for='radio-gamma'>  "+chC+" </label><br><br>";
 								test.innerHTML += "<button onclick='checkAnswer()'>Enviar respuesta</button>";
 							}

@@ -32,7 +32,8 @@ CREATE TABLE `login` (
   `password` varchar(250) NOT NULL,
   `email` varchar(250) NOT NULL,
   `pasadmin` varchar(250) NOT NULL,
-  `rol` int(3) NOT NULL
+  `rol` int(3) NOT NULL,
+  `puntaje` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -40,10 +41,10 @@ CREATE TABLE `login` (
 --
 
 INSERT INTO `login` (`id`, `user`, `password`, `email`, `pasadmin`, `rol`) VALUES
-(1, 'Administrador', '', 'admin@gmail.com', '123456', 1),
-(2, 'Joseph', '12345', 'josephg059@gmail.com', '', 2),
-(4, 'joseph', '12345', 'joseph@gmail.com', '', 2),
-(5, 'paul', '1234', 'paul@gmail.com', '', 2);
+(1, 'Allan', '', 'vredes@live.com', '12345', 1),
+(2, 'usuario2', '1234', 'usuario2@gmail.com', '', 2),
+(4, 'usuario3', '1234', 'usuario3@gmail.com', '', 2),
+(5, 'usuario4', '1234', 'usuario4@gmail.com', '', 2);
 
 --
 -- Índices para tablas volcadas

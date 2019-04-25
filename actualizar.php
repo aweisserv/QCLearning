@@ -66,9 +66,8 @@ if (@!$_SESSION['user']) {
 		    	$pass=$row[2];
 		    	$email=$row[3];
 		    	$pasadmin=$row[4];
+		    	$puntaje=$row[5];
 		    }
-
-
 
 		?>
 
@@ -77,7 +76,8 @@ if (@!$_SESSION['user']) {
 				Usuario<br> <input type="text" name="user" value="<?php echo $user?>"><br>
 				Password usuario<br> <input type="text" name="pass" value="<?php echo $pass?>"><br>
 				Correo usuario<br> <input type="text" name="email" value="<?php echo $email?>"><br>
-				Pssword administrador<br> <input type="text" name="pasadmin" value="<?php echo $pasadmin?>"><br>
+				Password administrador<br> <input type="text" name="pasadmin" value="<?php echo $pasadmin?>"><br>
+				Puntaje<br> <input type="text" name="puntaje" value="<?php echo $puntaje?>"><br>
 				
 				<br>
 				<input type="submit" value="Guardar" class="btn btn-success btn-primary">

@@ -19,6 +19,7 @@ session_start();
 			$_SESSION['id']=$f2['id'];
 			$_SESSION['user']=$f2['user'];
 			$_SESSION['rol']=$f2['rol'];
+			$_SESSION['puntaje']=$f2['puntaje'];
 
 			echo '<script>alert("BIENVENIDO ADMINISTRADOR")</script> ';
 			echo "<script>location.href='admin.php'</script>";
@@ -33,7 +34,8 @@ session_start();
 			$_SESSION['id']=$f['id'];
 			$_SESSION['user']=$f['user'];
 			$_SESSION['rol']=$f['rol'];
-
+			$_SESSION['puntaje']=$f2['puntaje'];
+			
 			header("Location: index2.php");
 		}else{
 			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';

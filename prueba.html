@@ -40,13 +40,22 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<div class="content">
-						<header>
-							<h2 id="quantum-teleportation-code">Inicio de prueba</h2>
-							<p>We have our circuit for quantum teleportation:</p>
+
 							
-							<p>We can now translate each of the steps in this quantum circuit into Q#.</p>
-							<h3 id="step-0-definition">Step 0: Definition</h3>
-							<p>When we perform teleportation, we must know the <strong>message</strong> we wish to send, and where we wish to send it (<strong>there</strong>). For this reason, we begin by defining a new Teleport operation that is given two qubits as arguments, <code>msg</code> and <code>there</code>:</p>
+						<header>
+
+
+							<h2 id="quantum-teleportation-code">Inicio de prueba</h2>
+							<div class="loader">
+   								 <img src="images/giphy.gif" alt="Loading..." />
+							</div>
+							<h2 id="title">Custom Loader - dcode</h2>
+							<img src="/images/algebra.jpg" class="thumb" />
+							<p>Teniendo nuestro circuito cuántico realizado:</p>
+							<img src="section/images/imagenes/12.png" width="600" height="280" class="thumb" /><br/>
+							<p>¿Qué resultado debiera obtener si la medición que efectúa el emisor en sus dos cúbits es "00"?.</p>
+							
+							<p><code>|G⟩</code> y <code>|ψ⟩</code>:</p>
 							<pre><code class="lang-qsharp">operation Teleport(msg : Qubit, there : Qubit) : Unit {
 							    body (...) {
 							</code></pre>
@@ -74,8 +83,15 @@
 							</code>
 						</pre>
 					</header>
+
 				</div>
 			</div>
 		</section>
+		<script>
+		window.addEventListener("load", function () {
+			const loader = document.querySelector(".loader");
+			loader.className += " hidden"; // class "loader hidden"
+		});
+		</script>
 	</body>
 </html>
