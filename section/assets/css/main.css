@@ -2843,3 +2843,30 @@ td table tbody tr td{
   position:relative;
 }
 
+.central{
+  align-items: middle;
+  float: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;"
+}
+
+/* CTA */
+#cta {
+  background-color: #ce1b28;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed;
+  background-image: url(../../images/bg.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+    
+  text-align: center;
+  position:relative; 
+  
+  z-index: 1; }
+  
+  @media screen and (max-width: 980px) {
+    #cta {
+      background-attachment: scroll; } }
+

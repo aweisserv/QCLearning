@@ -23,7 +23,6 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" /> 
-		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
 
 <style>
 body{ margin: 0px; text-align: left; }
@@ -45,90 +44,66 @@ header{margin: 0px; text-align: center; }
 #wrapper{ margin-top: 160px; }
 </style>
 
-<script>
-var pagetop, menu, yPos;
-function yScroll(){
-	pagetop = document.getElementById('pagetop');
-	yPos = window.pageYOffset;
-	if(yPos > 150){
-		pagetop.style.height = "36px";
-		pagetop.style.paddingTop = "2px";
-		menu.style.height = "0px";
-	} else {
-		pagetop.style.height = "120px";
-		pagetop.style.paddingTop = "50px";
-		menu.style.height = "50px";
-	}
-}
-window.addEventListener("scroll", yScroll);
-</script>
+<!-- Header -->
+			<header id="header">
+
+				<a class="logo" href="index2.php">Acerca de QC Learning / About</a>
+
+				<!-- Referencias del login-->
+
+
+				<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
+				<li><a href="">Puntaje: <strong><?php echo $_SESSION['puntaje'];?></strong> </a></li>
+				
+				<!-- Fin referencias-->
+
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+
+
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="evaluaciones.html">Evaluaciones</a></li>
+					<li><a href="genericopia.php">Prototipo de Evaluaciones</a></li>
+					<li><a href="desconectar.php"> Cerrar Cesión </a></li>
+				</ul>
+			</nav>
 
 </head>
-<div id="pagetop">
-	&nbsp;&nbsp;<a href='/academia3/index2.php'>INICIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Curso Básico - QC Learning 
 
-</div>
 <header>
-<div class="inner">
-<div id="wrapper">
-	<br><br>
-	<h3>Curso Básico:</h3>
-	<h2>Tele-transportación cuántica de estados</h2><br>
-	Curso básico: Puertas Cuánticas y medición de cúbits.<br>
-	En aproximadamente 30 minutos, el estudiante sabrá lo suficiente acerca de cúbits, superposición y entrelazamiento para escribir su primer programa cuántico, y tener una idea razonable de lo que significa. <br>
-					<div class ="highlights">
-						<section>		
-							<div class ="box">
-							 <div class="content">
-
-									<i><a href="#" class="icon fa-university" style='font-size:70px'><span class="label"></span></a></i>
-									<h6>1</h6>
-									<h3>Origen</h3><br>
-								
-								<p align=left>Introducción a la informática cuántica</p>
-								<ul><br>
-									<p align=left><li>Origen</li>
-									<li>Motivación</li> 
-									<li>Avances registrados</li>
-									<a href="ORIGEN.php">Ver todo</a>
-									
-								</ul></p>
-							 </div>
-							</div>
-						</section>
-						<section>
-							<div class ="box">
-							 <div class="content">
-								
-									<i><a href="#" class="icon fa-book" style='font-size:70px'><span class="label" ></span></a></i>
-									<h6>2</h6>
-									<h3>Bases y Conceptos</h3>
-								
-								<p align=left>Guía de contenidos básicos para el estudiante.<br>
-									<br>Terminología y conceptos necesarios para iniciar el curso básico.<br></p>
-									<a type="button" value="Comenzar" onClick="this.style.visibility= 'hidden'; document.getElementById('oculto').style.visibility='visible';document.getElementById('oculto2').style.visibility='visible'">Iniciar</a><br>
-							 </div>
-							</div>
-						</section>
-					</div>
-	 
-<br>
-</div>
-</div>
-<div id="oculto" style="visibility:hidden"> 
+<br><br><br><br>
 <section id="main">
-<div class="inner">
-			<div class="content">
-				<h3>Enviando un mensaje cuántico</h3>Contenidos:<br> 
-				<ol>
-					<li>Paso 0 - Inicio y preparación</li> 
-					<li>Paso 1 - Entrelazamiento</li>
-					<li>Paso 1.1 - Aplicando compuerta CNOT</li>
-					<li>Paso 1.2 - Aplicando compuerta Hadamard</li>
-					<li>Paso 2 - Medición </li>
-				</ol>
-
+	<div class="inner">
+		<div class="content">
+		<br><br>
+		<h1>Curso básico</h1><h4>Puertas cuánticas y medición de cúbits.</h4><img src="images/q.jpg" alt="" /><br><br>
+		En aproximadamente <b>30</b> minutos, el estudiante sabrá lo suficiente acerca de <b>Cúbits</b>, <b>Superposición</b> y <b>Entrelazamiento</b> para escribir su primer programa cuántico, y lo más importante, tener una idea razonable de lo que significa.<br/><br>
+	
+		<a type="button" value="Comenzar" onClick="this.style.visibility= 'hidden'; document.getElementById('oculto').style.visibility='visible';document.getElementById('oculto2').style.visibility='visible'">Iniciar.</a><br><br> 
+		</div>
+	</div>
 </section>
+<div id="oculto" style="visibility:hidden"> 
+	<section id="main">
+		<div class="inner">
+			<div class="content">
+				<h3>Puertas cuánticas</h3>Contenidos:<br> 
+				<ol>
+					<li>Paso 0 - Volver a lo básico</li> 
+					<li>Paso 1 - Midiendo un cúbit</li>
+					<li>Paso 2 - Puertas cuánticas</li>
+					<li>Paso 3 - Puertas importantes</li>
+					<li>Paso 4 - Cúbits múltiples</li>
+				</ol>
+			</div>
+		</div>
+	</section>
 </div> 
 </header>
 <body>
@@ -139,16 +114,20 @@ window.addEventListener("scroll", yScroll);
 				<div class="content">
 						
 
-					<h3>Paso - <b>0: Inicio y preparación del algoritmo</b> </h3>
+					<h3>Paso - <b>0: Volver a lo básico</b> </h3>
+					It’s easy to forget that the programs we write are essentially just manipulating a bunch of 0s and 1s stored in our ‘classical’ computer. These are discrete, binary states.
+					Quantum computers however operate on continuous states – that’s part of what makes them so powerful.
+					So instead of a classical bit being ‘on’ or ‘off’ like a light switch, in a quantum computer we have qubits, which are more like a dimmer switch, being any possible combination of ‘on’ and ‘off’ in between.
+					Just as bits are the fundamental object of information in classical computing, qubits (quantum bits) are the fundamental object of information in quantum computing. To understand this correspondence, let's look at the simplest example: a single qubit.
+					<hr>
+					<h3>Paso - <b>1: Midiendo un cúbit</b><br/></h3>
+					
+					While a bit, or binary digit, can have value either 00 or 11, a qubit can have a value that is either of these or a quantum superposition of 00 and 11.<br><br>
+					<img src="images/imagenesbasico/qubits.png" class="central"><br><br>
 
-					Para realizar el siguiente algoritmo cuántico, es necesario que el emisor del mensaje y el receptor(yo) del mismo, tengamos preparado previamente un <strong>estado de Bell</strong>; donde él posee un cúbit <strong>|G⟩</strong> que está entrelazado con mi cúbit, <strong>|F⟩</strong>. Si deseo alejarme del emisor, no importa a qué distancia nos separemos, ya sea de un país a otro, de todo el mundo o el universo, estos cúbits seguirán entrelazados.<br/>Recordemos la propiedad del entrelazado: Los resultados de medición están correlacionados. Si el emisor mide su cúbit, afectará a mi cúbit (de nuevo, a pesar de la distancia). Vamos a explotar esta propiedad en los siguientes pasos.<br/><hr>
+					The state of a single qubit can be described by a two-dimensional column vector of unit norm, that is, the magnitude squared of its entries must sum to 11. This vector, called the quantum state vector, holds all the information needed to describe the one-qubit quantum system just as a single bit holds all of the information needed to describe the state of a binary variable.
 
-					<h3>Paso - <b>1: Entrelazar Cúbit del emisor con |ψ⟩</b><br/>
-					<img src="images/imagenes/001.png" width="600" height="300"></h3><br/>
-
-					Podemos utilizar este circuito cuántico para describir nuestro punto de partida inicial. En la parte superior izquierda tenemos la fuente de todo el esfuerzo, un cúbit |ψ⟩, que el emisor desea enviarme. Este se encuentra en un estado desconocido que podemos representar de la siguiente manera:
-					<br/><br/>
-					<img src="images/imagenes/002.png" width="210" height="60"><br/>
+					<br><img src="images/imagenes/002.png" width="210" height="60" class="central"><br/>
 
 					Además, el emisor posee un cúbit |G⟩, que, como acabamos de describir, ahora está entrelazado con mi cúbit, |F⟩ (ilustrado con línea ondulada). Ahora ambos se encuentran en un estado de Bell:
 					<br/><br/>

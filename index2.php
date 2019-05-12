@@ -166,7 +166,7 @@
 							 <div class="content">
 								<header>
 									<i><a href="#" class="icon fa-paper-plane-o" style='font-size:70px'><span class="label"></span></a></i>
-									<h6>6</h6>
+									<h6><br>6</h6>
 									<h3>Simuladores</h3>
 								</header>
 								<p><ul align=left>
