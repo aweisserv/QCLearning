@@ -80,9 +80,12 @@ header{margin: 0px; text-align: center; }
 
 <br><br><br><br>
 <section id="main">
-	<a href="#" class="button primary">Primary</a>
-	<a href="#" class="button primary">Primary</a>
-	<a href="#" class="button primary">Primary</a><br><br>
+	<a href="#" class="button primary">Introducción</a>
+	<a href="#" class="button primary">Contenidos</a>
+	<a href="#" class="button primary">Parte 2</a>
+	<a href="#" class="button primary">Ver cursos</a>
+	&nbsp;&nbsp;&nbsp;<a href="#" class="button">Volver a inicio</a>
+	<br><br>
 	<div class="inner">
 		<div class="content">
 			<section id="cta" class="wrapper">
@@ -93,48 +96,50 @@ header{margin: 0px; text-align: center; }
 				</div>
 			</section>
 		<!-- <img src="images/basico.png" alt="" class="central" style="width:100%"/><br><br>-->
-		<br><font size="+1">En aproximadamente <b>30</b> minutos, el estudiante sabrá lo suficiente acerca de <b>Cúbits</b>, <b>Superposición</b> y <b>Entrelazamiento</b> para escribir su primer programa cuántico, y lo más importante, tener una idea razonable de lo que significa.</font><br/><br>
+		<br><font size="+1">En aproximadamente <b>30</b> minutos, el estudiante sabrá lo suficiente acerca de <b>Cúbits</b>, <b>Superposición</b> y <b>Entrelazamiento cuántio</b>. Con lo anterior, podrá escribir su primer programa cuántico, y lo más importante, tener una idea razonable de lo que significa.</font><br/><br>
 		
-		<a type="button" value="Comenzar" onClick="this.style.visibility= 'hidden'; document.getElementById('oculto').style.visibility='visible';document.getElementById('oculto2').style.visibility='visible'">Iniciar.</a><br><br> 
+		<!--<a type="button" value="Comenzar" onClick="this.style.visibility= 'hidden'; document.getElementById('oculto').style.visibility='visible';document.getElementById('oculto2').style.visibility='visible'">Iniciar.</a><br><br> -->
 		</div>
 	</div>
 </section>
 
 
 
-<div id="oculto" style="visibility:hidden"> 
+<!--<div id="oculto" style="visibility:hidden">-->
 	<section id="main">
 		<div class="inner">
-			<div class="content">
-				<h3>Puertas cuánticas</h3>Contenidos:<br> 
-				<ol>
-					<li>Paso 0 - Volver a lo básico</li> 
-					<li>Paso 1 - Midiendo un cúbit</li>
-					<li>Paso 2 - Puertas cuánticas</li>
-					<li>Paso 3 - Puertas importantes</li>
-					<li>Paso 4 - Cúbits múltiples</li>
-				</ol>
-				<section>
-							<div class ="box">
-							 <div class="content">
-								<header>
-									<i><a href="#" class="icon fa-graduation-cap" style='font-size:70px'><span class="label">Icon</span></a></i>
-									<h6>4</h6>
-									<h3>Cursos y pruebas de aprendizaje</h3><h4>Parte 2</h4>
-								</header>
-									<p><ul align=left>
-										 <li align=left>Curso avanzado: Tele-transportación cuántica de estados*</li> 
-										 <li align=left>Prueba de contenidos*</li>
-										 <li>*Puntaje requerido: <a href="ORIGEN.php"> 600 puntos</a></li>
-									 </ul></p>	
-							 </div>
-							</div>
-</section>
-			</div>
+			<section>
+				<div class ="box">
+					<div class="content">
+						<i><a href="#" class="icon fa-book" style='font-size:70px'><span class="label" ></span></a></i>
+							<h3>Bases y Conceptos</h3>
+							<p align= center>Guía de contenidos básicos para el estudiante.<br>
+							Terminología y conceptos necesarios para iniciar el curso básico.<br></p>
+							<br><a href="#" class="center"> Ir a sección </a>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class ="box">
+					<div class="content">
+						
+							<i><a href="#" class="icon fa-graduation-cap" style='font-size:70px'><span class="label">Icon</span></a></i>
+							<h3>Curso básico de computación cuantica</h3><h4><b>Contenidos:</b> </h4>
+									
+							<li>Inicio - Volver a lo básico</li> 
+							<li>Paso 1 - Midiendo un cúbit</li>
+							<li>Paso 2 - Puertas cuánticas</li>
+							<li>Paso 3 - Puertas importantes</li>
+							<li>Paso 4 - Cúbits múltiples</li>
+									
+					 </div>
+				</div>
+			</section>
+
 		</div>
 	</section>
 </div> 
-</header>
+							
 <body>
 
 	<div id="oculto2" style="visibility:visible;"> 
@@ -143,7 +148,7 @@ header{margin: 0px; text-align: center; }
 				<div class="content">
 						
 
-					<h3><P align="center">0: <b>Back to basics</b></P></h3><br>
+					<h3><P align="center"><b>Back to basics</b></P></h3><br>
 					It’s easy to forget that the programs we write are essentially just manipulating a bunch of 0s and 1s stored in our ‘classical’ computer. These are discrete, binary states.
 					Quantum computers however operate on continuous states – that’s part of what makes them so powerful.
 					So instead of a classical bit being ‘on’ or ‘off’ like a light switch, in a quantum computer we have qubits, which are more like a dimmer switch, being any possible combination of ‘on’ and ‘off’ in between.
@@ -151,7 +156,7 @@ header{margin: 0px; text-align: center; }
 					<hr>
 					<h3><P align="center">1: <b>Representing a Qubit</b></P></h3><br>
 					
-					While a bit, or binary digit, can have value either <font size="+1"><b>0</b></font> or <font size="+1"><b>1</b></font>, a qubit can have a value that is either of these or a quantum superposition of <font size="+1"><b>00</b></font> and <font size="+1"><b>11.</b></font><br><br>
+					While a bit, or binary digit, can have value either <font size="+1"><b>0</b></font> or <font size="+1"><b>1</b></font>, a qubit can have a value that is either of these or a quantum superposition of <font size="+1"><b>0</b></font> and <font size="+1"><b>1.</b></font><br><br>
 					<img src="images/imagenesbasico/qubits.png" class="central"><br><br>
 
 					The state of a single qubit can be described by a two-dimensional column vector of unit norm, that is, the magnitude squared of its entries must sum to <font size="+1"><b>11.</b></font> This vector, called the quantum state vector, holds all the information needed to describe the one-qubit quantum system just as a single bit holds all of the information needed to describe the state of a binary variable.<br>

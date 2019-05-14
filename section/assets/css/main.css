@@ -2870,3 +2870,112 @@ td table tbody tr td{
     #cta {
       background-attachment: scroll; } }
 
+.container {
+
+  align-items: center; 
+
+    position: relative;
+      margin: 2.5rem 0;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+
+
+        
+  }
+.highlights .box{
+  position: relative;
+  height: 500px;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  border: 2px solid: #FFFFFF;
+  box-shadow: 8px 8px 8px #aaaaaa;
+
+  
+}
+.highlights .box:before{
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  left: -1px;
+  bottom: -1px;
+  background: #AEAEAE;
+    z-index: -1;
+  
+}
+
+
+.content{
+  position: relative;
+  padding: 20px;
+
+}
+.box .content h6{
+  position: absolute;
+  font-weight: 300;
+  top: -10px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  font-size: 8em;
+  color: #AEAEAE;
+  transition: 0.3s;
+
+
+}
+.box:hover .content h6{
+  top: -40px;
+  color: #B22222;
+}
+.box .content h3{
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+.box .content p{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #000000;
+}
+.box .content i{
+  position: relative;
+  margin: 5;
+  padding: 5;
+  font-size: 50px;
+  color: #AEAEAE;
+}
+.box .content a{
+  position: relative;
+  margin: 0px 0 0;
+  padding: 10px 10px;
+  text-decoration: none;
+  
+  display: inline-block;
+  color: #AEAEAE;
+  transition: 0.3s;
+  transform: translate(0px);
+  
+  
+}
+.box:hover .content a{
+  transform: translate(0);
+  opacity: 1;
+  color: #B22222;
+}
+
+.central{
+  align-items: middle;
+  float: center;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;"
+}
