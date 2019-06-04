@@ -67,16 +67,28 @@
 		#wrapper{ margin-top: 160px; }
 		</style>
 
-		<!-- Header -->
+<!-- Header -->
 		<header id="header">
 			<a class="logo" href="index2.php">Acerca de QC Learning / About</a>
-			
 			<!-- Referencias del login-->
-			<a class="central" href="">Bienvenido <strong><?php echo $_SESSION['user'];?> </strong> </a>
-			<a class="central" href="">Puntaje: <strong><?php echo $_SESSION['puntaje'];?> </strong> </a>
+			<li><a href="">Bienvenido <strong><?php echo $_SESSION['user'];?></strong> </a></li>
+			<li><a href="">Puntaje: <strong><?php echo $_SESSION['puntaje'];?></strong> </a></li>
 			
 			<!-- Fin referencias-->
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
 		</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index2.php">Inicio</a></li>
+					<li><a href="evaluaciones.html">Evaluaciones</a></li>
+					<li><a href="genericopia.php">Prototipo de Evaluaciones</a></li>
+					<li><a href="desconectar.php"> Cerrar Cesión </a></li>
+				</ul>
+			</nav>
 
 </head>
 

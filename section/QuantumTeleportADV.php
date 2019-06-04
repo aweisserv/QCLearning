@@ -101,8 +101,8 @@ window.addEventListener("scroll", yScroll);
 							<li>Producto interno</li>
 							<li>Introducción a la mecánica cuántica</li>							
 							<br><h3>Cursos</h3>
-							<a href="#">Curso básico: Introducción y puertas lógicas cuánticas</a></p>
-							<a href="QuantumTeleportADV2.php">Curso avanzado: Tele-transportación cuántica de datos</a></p><br>
+							<a href="QuantumTeleportBASICbeta.php">Curso básico: Introducción y puertas lógicas cuánticas</a></p>
+							<a href="QuantumTeleportADV2F.php">Curso avanzado: Tele-transportación cuántica de datos</a></p><br>
 							<h3>Guía externa (opcional)</h3>
 							Como complemento, se enlaza una guía de introducción a la informática cuántica realizada por el investigador y desarrollador de software en Microsoft, Dayton Ellwanger.
 							El formato de esta guía es a través de videos ordenados y subidos a un canal de YouTube perteneciente al creador.

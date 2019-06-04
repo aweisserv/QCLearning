@@ -144,8 +144,9 @@
 									<p><ul align=left>
 										 <li align=left>Curso avanzado: Tele-transportación cuántica de estados*</li> 
 										 <li align=left>Prueba de contenidos*</li>
-										 <li>*Puntaje requerido: <a href="ORIGEN.php"> 600 puntos</a></li>
-									 </ul></p>	
+										 <li>*Puntaje requerido: <a href="ORIGEN.php"> 600 puntos</a>
+										 </li>
+									 </ul><a href="genericopia2.php">TEST</a></p>	
 							 </div>
 							</div>
 						 </section>
@@ -165,6 +166,22 @@
 							<div class ="box">
 							 <div class="content">
 								<header>
+									<i><a href="#" class="icon fa-paper-plane-o" style='font-size:70px'><span class="label">Icon</span></a></i>
+									<h6>6</h6>
+									<h3>Simuladores</h3><h4>Parte 2</h4>
+								</header>
+									<p><ul align=left>
+										 <li align=left><srong>IBM Q Experience</srong></li> 
+										 <li align=left>Mirosoft Q# Development</li>
+										 <li>*Puntaje requerido: <a href="ORIGEN.php"> 600 puntos</a></li>
+									 </ul><a href="genericopia2.php">Ver registro</a></p>	
+							 </div>
+							</div>
+						 </section>
+						<!--<section>
+							<div class ="box">
+							 <div class="content">
+								<header>
 									<i><a href="#" class="icon fa-paper-plane-o" style='font-size:70px'><span class="label"></span></a></i>
 									<h6><br>6</h6>
 									<h3>Simuladores</h3>
@@ -176,7 +193,7 @@
 									 </ul><a href="genericopia2.php">Ver registro</a></p>
 							 </div>
 							</div>
-						</section>
+						</section>-->
 					</div>
 				</div>
 			</section>

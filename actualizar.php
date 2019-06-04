@@ -58,7 +58,7 @@ if (@!$_SESSION['user']) {
 		require("connect_db.php");
 
 		$sql="SELECT * FROM login WHERE id=$id";
-	//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
+	//la variable  $mysqli viene de connect_db, que lo traigo con el require("connect_db.php");
 		$ressql=mysqli_query($mysqli,$sql);
 		while ($row=mysqli_fetch_row ($ressql)){
 		    	$id=$row[0];
@@ -77,9 +77,8 @@ if (@!$_SESSION['user']) {
 				Password usuario<br> <input type="text" name="pass" value="<?php echo $pass?>"><br>
 				Correo usuario<br> <input type="text" name="email" value="<?php echo $email?>"><br>
 				Password administrador<br> <input type="text" name="pasadmin" value="<?php echo $pasadmin?>"><br>
-				Puntaje<br> <input type="text" name="puntaje" value="<?php echo $puntaje?>"><br>
+				Puntaje<br> <input type="text" name="puntaje" value="<?php echo $puntaje?>"><br><br>
 				
-				<br>
 				<input type="submit" value="Guardar" class="btn btn-success btn-primary">
 			</form>
 
@@ -110,9 +109,9 @@ if (@!$_SESSION['user']) {
       ================================================== -->
 <hr class="soften"/>
 <footer class="footer">
-
+<p>&nbsp; &copy; Copyright Allan Weisser Verdessi <br/></p>
 <hr class="soften"/>
-<p>&copy; Copyright Allan Weisser Verdessi <br/><br/></p>
+
  </footer>
 </div><!-- /container -->
 

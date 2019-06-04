@@ -8,8 +8,10 @@
 <!-- Revisión de Login & puntaje mínimo para acceso -->
 	<?php
 	session_start();
-	if ((@!$_SESSION['user'])||($_SESSION['puntaje']<600)) {
-		header("Location:index2.php");
+	if ((@!$_SESSION['user'])||($_SESSION['puntaje']<200)) {
+		echo '<script>alert("No posees el puntaje requerido para esta sección.")</script> ';
+		echo "<script>location.href='index2.php'</script>";
+		//header("Location:index2.php");
 	}
 	?>
 <!-- Fin revisión -->
@@ -152,24 +154,19 @@
 
 		<!-- Footer -->
 			<footer id="footer">
-
 				<div class="inner">
 					<div class="content">
+						
 						<section>
-							<h3>Acerca de</h3>
-							<p>Fuentes:
-							-, -, -.</p>
-						</section>
-
-						<section>
-							<h4>Redes</h4>
+							<h4>Conecta QC Learning en redes sociales<br /> Connect QC Learning on social media</h4>
 							<ul class="plain">
-								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
 								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
 								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
 							</ul>
 						</section>
+					</div>
+					<div class="copyright">
+						&copy; ## <a href="https://##">#</a>, # <a href="https://##">##</a>.
 					</div>
 				</div>
 			</footer>

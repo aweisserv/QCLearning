@@ -24,6 +24,13 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Llamado a JQuery -->	
+		<script type="text/javascript" src="JQuery/jquery.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				alert("Modules loaded correctly. Press 'OK' to continue.");
+			});
+		</script>
 	</head>
 	<body class="is-preload">
 		
@@ -91,22 +98,22 @@
 							function renderQuestion(){
 								test = _("test");
 								if(pos >= questions.length && correct <= questions.length/3){
-									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2> 											 <h3>Te sugerimos empezar por la <a href='section/QuantumTeleportADV.php'>sección de aprendizaje para principiantes</a> </h3> <hr /><h3>Curso básico<br></h3>";
-
+									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2> 											 <h3>Te sugerimos empezar por la <a href='section/QuantumTeleportADV.php'>sección de aprendizaje para principiantes</a> </h3> <hr /><h3>Curso básico<br></h3>" + "<a href='/section/QuantumTeleportBASICbeta.php'>Continuar</a>";
 									
+																	
 									_("test_status").innerHTML = "Prueba completada";
+
 
 									puntaje = correct;
 									pos = 0;
 									correct = 0;
 									return false;
-
-
-								}else if (pos >= questions.length && correct > questions.length/3){
-									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" </h2><hr/><h3><a href='section/QuantumTeleportADV2.php'>Curso avanzado</a></h3>";
 									
 
-									_("test_status").innerHTML = "Prueba completada";
+								}else if (pos >= questions.length && correct > questions.length/3){
+									test.innerHTML = "<h2> Has obtenido "+correct+" de "+questions.length+" preguntas correctas</h2><br> <h2> Tu puntaje obtenido es: "+puntaje*100+" <hr /><h2>Detalles<br></h2>" + "<a href='registro.php'>Continuar</a>";
+
+								_("test_status").innerHTML = "Prueba completada";
 
 									pos = 0;
 									correct = 0;
@@ -153,24 +160,19 @@
 
 		<!-- Footer -->
 			<footer id="footer">
-
 				<div class="inner">
 					<div class="content">
+						
 						<section>
-							<h3>Acerca de</h3>
-							<p>Fuentes:
-							-, -, -.</p>
-						</section>
-
-						<section>
-							<h4>Redes</h4>
+							<h4>Conecta QC Learning en redes sociales<br /> Connect QC Learning on social media</h4>
 							<ul class="plain">
-								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
 								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
 								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
 							</ul>
 						</section>
+					</div>
+					<div class="copyright">
+						&copy; ## <a href="https://##">#</a>, # <a href="https://##">##</a>.
 					</div>
 				</div>
 			</footer>

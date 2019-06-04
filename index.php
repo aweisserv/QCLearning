@@ -52,7 +52,7 @@
     <legend  style="font-size: 18pt"><b>Registro</b></legend>
     <div class="form-group">
       <label style="font-size: 14pt"><b>Ingresa tu nombre</b></label>
-      <input type="text" name="realname" class="form-control" placeholder="Ingresa tu nombre" />
+      <input type="text" name="realname" class="form-control" value="Ingresa tu nombre" readonly="readonly"/>
     </div>
     <div class="form-group">
       <label style="font-size: 14pt; color: #FFFFFF;"><b>Ingresa tu email</b></label>
