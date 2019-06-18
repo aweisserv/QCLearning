@@ -56,7 +56,7 @@
 				<ul class="links">
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="evaluaciones.html">Evaluaciones</a></li>
-					<li><a href="genericopia.php">Prototipo de Evaluaciones</a></li>
+					<li><a href="pruebas/diagnostico.php">Diagnóstico</a></li>
 					<li><a href="desconectar.php"> Cerrar Cesión </a></li>
 				</ul>
 			</nav>
@@ -67,7 +67,7 @@
 					<h1>QC Learning</h1>
 					<p>Plataforma educativa de introducción a la informática cuántica<br />
 					Educational platform of introduction to quantum computing  </p> <br />
-					Proyecto de título por Allan Weisser V.<br /><a href="https://campus.ing.unab.cl/">UNIVERSIDAD ANDRES BELLO</a></p>
+					Proyecto de título por Allan Weisser V.<br /><a href="https://campus.ing.unab.cl/"><b>UNIVERSIDAD ANDRES BELLO</b></a></p>
 				</div>
 				<!--<video autoplay loop muted playsinline src="images/particles.mp4"></video>-->
 			</section>
@@ -87,17 +87,16 @@
 							<div class ="box">
 							 <div class="content">
 
-									<i><a href="#" class="icon fa-university" style='font-size:70px'><span class="label"></span></a></i>
+									<i><a href="ORIGEN.php" class="icon fa-university" style='font-size:70px'><span class="label"></span></a></i>
 									<h6>1</h6>
 									<h3>Origen</h3><br>
 								
 								<p align=left>Introducción a la informática cuántica</p>
 								<ul><br>
-									<p align=left><li>Origen</li>
+									<font size="+1.5"><p align=left><li>Origen</li>
 									<li>Motivación</li> 
-									<li>Avances registrados</li>
-									<a href="ORIGEN.php">Ver todo</a>
-									
+									<li>Avances registrados</li></font>
+																		
 								</ul></p>
 							 </div>
 							</div>
@@ -106,12 +105,18 @@
 							<div class ="box">
 							 <div class="content">
 								
-									<i><a href="#" class="icon fa-book" style='font-size:70px'><span class="label" ></span></a></i>
+									<i><a href="bases.php" class="icon fa-book" style='font-size:70px'><span class="label" ></span></a></i>
 									<h6>2</h6>
 									<h3>Bases y Conceptos</h3>
 								
-								<p align=left>Guía de contenidos básicos para el estudiante.<br>
-									<br>Terminología y conceptos necesarios para iniciar el curso básico.<br></p>
+								<p align=left>Guía de contenidos para el estudiante:
+								<br></p><br>
+									<ul>
+										<li>Conceptos necesarios para iniciar el curso básico.</li>
+									</ul>
+
+									&nbsp;&nbsp;<font size="+1">Requiere: <a href="s_puntaje.php"> 200 puntos</a></font>
+								</ul></p>
 							 </div>
 							</div>
 						</section>
@@ -119,17 +124,16 @@
 							<div class ="box">
 							 <div class="content">
 								<header>
-									<i><a href="#" class="icon fa-graduation-cap" style='font-size:70px'><span class="label"></span></a></i>
+									<i><a href="cursos/QuantumIntro.php" class="icon fa-graduation-cap" style='font-size:70px'><span class="label"></span></a></i>
 									<h6>3</h6>
-									<h3>Cursos y pruebas de aprendizaje</h3><h4>Parte 1</h4>
+									<h3>Cursos y pruebas de aprendizaje</h3><font size="+1">PARTE 1</font>
 								</header>
-								<p><ul align=left>
-									<li align=left><a href="section/QuantumTeleportADV.php">Introducción a cursos</a></li> 
-									<li align=left>Curso básico: puertas lógicas*</li> 
-									<li align=left>Prueba de contenidos*</li>
-									<li>*Puntaje requerido: <a href="ORIGEN.php"> 400 puntos</a></li>
+								<ul align=left>
+									<li><a href="cursos/QuantumIntro.php"><font size="+1.5">Introducción a cursos</a></font></li>
+									<li>&nbsp;&nbsp;&nbsp;Curso básico:<a href="cursos/QuantumTeleportBASICbeta.php">puertas lógicas </a></li><p><br>
+									&nbsp;&nbsp;&nbsp;<font size="+1">Requiere: <a href="s_puntaje.php"> 400 puntos</a></font></p>
 									
-								</ul></p>								
+								</ul>								
 							 </div>
 							</div>
 						</section>
@@ -139,14 +143,14 @@
 								<header>
 									<i><a href="#" class="icon fa-graduation-cap" style='font-size:70px'><span class="label">Icon</span></a></i>
 									<h6>4</h6>
-									<h3>Cursos y pruebas de aprendizaje</h3><h4>Parte 2</h4>
+									<h3>Cursos y pruebas de aprendizaje</h3>
+									<font size="+0.5">PARTE 2</font>
 								</header>
-									<p><ul align=left>
-										 <li align=left>Curso avanzado: Tele-transportación cuántica de estados*</li> 
-										 <li align=left>Prueba de contenidos*</li>
-										 <li>*Puntaje requerido: <a href="ORIGEN.php"> 600 puntos</a>
-										 </li>
-									 </ul><a href="genericopia2.php">TEST</a></p>	
+								<ul align=left><br>
+									<li>Curso avanzado:</li><a href="cursos/QuantumTeleportADV2F.php">Tele-transportación cuántica de estados </a><p>
+									&nbsp;&nbsp;&nbsp;<font size="+1">Requiere: <a href="cursos/QuantumTeleportADV2F.php"> 600 puntos</a></font>
+									 
+								 </ul></p>
 							 </div>
 							</div>
 						 </section>
@@ -157,8 +161,13 @@
 									<i><a href="#" class="icon fa-cogs" style='font-size:70px'><span class="label"></span></a></i>
 									<h6>5</h6>
 									<h3>Prueba Blockly!</h3>
+									<font size="+0.5">Programa externo</font><br><br>
+									
 								</header>
-								<p>Herramienta basada en los conocimientos adquiridos en los cursos básico y avanzado. Consta de puzzles con algoritmos desordenados que el estudiante deberá ordenar.<br /><a href="EMPRESAS.html">Ir a Blockly<br>*Puntaje requerido: <a href="ORIGEN.php"> 800 puntos</a> </p>
+								<p><ul align=left>
+									<li>Herramienta de carácter teórico-práctico basada en los conocimientos adquiridos del <b><font size="+1">curso avanzado.</font></b></li><a href=""></a><br>
+									&nbsp;&nbsp;&nbsp;<font size="+1">Requiere: <a href="cursos/QuantumTeleportADV2F.php"> 800 puntos</a></font>
+								</ul></p>
 							 </div>
 							</div>
 						</section>
@@ -168,13 +177,16 @@
 								<header>
 									<i><a href="#" class="icon fa-paper-plane-o" style='font-size:70px'><span class="label">Icon</span></a></i>
 									<h6>6</h6>
-									<h3>Simuladores</h3><h4>Parte 2</h4>
+									<h3>Simuladores</h3>
+									<font size="+0.5">Programas externos</font><br><br>
 								</header>
 									<p><ul align=left>
 										 <li align=left><srong>IBM Q Experience</srong></li> 
-										 <li align=left>Mirosoft Q# Development</li>
-										 <li>*Puntaje requerido: <a href="ORIGEN.php"> 600 puntos</a></li>
-									 </ul><a href="genericopia2.php">Ver registro</a></p>	
+										 <li align=left>Mirosoft Q# Development</li><a href=""></a>
+										 
+									 	</ul><br>
+									&nbsp;&nbsp;&nbsp;<font size="+1">Requiere: <a href="cursos/QuantumTeleportADV2F.php"> 1000 puntos</a></font>
+									</p>	
 							 </div>
 							</div>
 						 </section>

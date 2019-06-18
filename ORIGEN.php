@@ -67,6 +67,10 @@
 							El número de cúbits indica la cantidad de bits que pueden estar en superposición. Con los bits convencionales, si se tenía un registro de tres bits, había ocho valores posibles y el registro sólo podía tomar uno de esos valores. En cambio, si se tenía un vector de tres cúbits, la partícula puede tomar ocho valores distintos a la vez gracias a la superposición cuántica. Así, un vector de tres cúbits permitiría un total de ocho operaciones paralelas. Como cabe esperar, el número de operaciones es exponencial con respecto al número de cúbits.<br/><br/>
 
 							Para hacerse una idea del gran avance, un computador cuántico de 30 cúbits equivaldría a un procesador convencional de 10 teraflops (10 millones de millones de operaciones en coma flotante por segundo), cuando actualmente las computadoras trabajan en el orden de gigaflops (miles de millones de operaciones).</p>
+
+							<ul class="actions">
+								<li><a href="index2.php" class="button primary">Volver</a></li>
+							</ul>
 					</div>
 				</div>
 			</section>
