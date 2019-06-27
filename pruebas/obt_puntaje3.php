@@ -41,7 +41,7 @@
 
 <!-- Revisión de puntaje mínimo para acceso -->
   <?php
-  if ((@!$_SESSION['user'])||($_SESSION['puntaje']==200)) {
+  if ((@!$_SESSION['user'])||($_SESSION['puntaje']==600)) {
     echo '<script>alert("No posees el puntaje requerido para esta sección.")</script> ';
     echo "<script>location.href='../index2.php'</script>";
   }
@@ -58,11 +58,11 @@
         <h1>Diagnóstico completado</h1><hr>
           <div class="row">
           <div class="highlight">
-        <form method="POST" action="obt_puntaje1.php" >
+        <form method="POST" action="obt_puntaje3.php" >
 
         <div class="form-group">
           <label for="puntaje">Puntaje obtenido:</label>
-          <input type="text" name="puntaje" class="form-control" id="puntaje" value="400" readonly="readonly">
+          <input type="text" name="puntaje" class="form-control" id="puntaje" value="1000" readonly="readonly">
         </div>
 
           <br><h3>Has desbloqueado una nueva sección</h3>

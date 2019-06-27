@@ -78,7 +78,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<a class="logo" href="../index2.php">Acerca de QC Learning / About</a>
+			<a class="logo" href="../index2.php">Acerca de QC Learning | About</a>
 			
 			<!-- Referencias del login-->
 			<a class="central" href="">Bienvenido <strong><?php echo $_SESSION['user'];?> </strong> </a>
